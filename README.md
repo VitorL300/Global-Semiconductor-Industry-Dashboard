@@ -1,8 +1,6 @@
 💻 Dashboard da Indústria de Semicondutores
 
-Este projeto é uma aplicação web interativa desenvolvida em Python (usando Streamlit) para analisar o mercado global de semicondutores.
-
-O painel cruza dados financeiros das maiores empresas de hardware do mundo com o histórico de preços de componentes básicos (memórias DRAM e NAND) e o cenário em expansão de aceleradores e chips de Inteligência Artificial.
+Este projeto é uma aplicação web interativa desenvolvida em Python (usando Streamlit) para analisar o mercado global de semicondutores. O painel cruza dados financeiros das maiores empresas de hardware do mundo com o histórico de preços de componentes básicos (memórias DRAM e NAND) e o cenário em expansão de aceleradores e chips de Inteligência Artificial.
 
 ✨ Funcionalidades Principais
 
@@ -24,7 +22,7 @@ Streamlit: Criação da interface web interativa.
 
 Pandas: Leitura, limpeza e manipulação de dados.
 
-Plotly (Express): Renderização de visualizações gráficas e interativas.
+Plotly Express: Renderização de visualizações gráficas interativas.
 
 WordCloud: Geração da nuvem de palavras.
 
@@ -46,27 +44,44 @@ Siga os passos abaixo para rodar o projeto na sua máquina:
 
 Clone o repositório:
 
-git clone https://github.com/seu-usuario/seu-repositorio.git
-cd seu-repositorio
+git clone https://github.com/VitorL300/Global-Semiconductor-Industry-Dashboard.git
+cd Global-Semiconductor-Industry-Dashboard
 
 
-Instale as dependências necessárias:
-Recomenda-se o uso de um ambiente virtual (venv). Execute:
+Crie e ative um ambiente virtual (recomendado):
 
-pip install streamlit pandas plotly wordcloud
+python -m venv venv
+
+# Para ativar no Windows:
+venv\Scripts\activate
+
+# Para ativar no Mac/Linux:
+source venv/bin/activate
+
+
+Instale as dependências:
+Com o ambiente virtual ativado, instale as bibliotecas listadas no arquivo de requisitos:
+
+pip install -r requirements.txt
 
 
 Verifique os dados:
-Certifique-se de que a pasta data/ com os arquivos CSV correspondentes (citados acima) está na mesma raiz do script principal.
+Certifique-se de que a pasta data/ com os arquivos CSV correspondentes está na mesma raiz do script principal (app.py).
 
 Inicie a aplicação:
 
 streamlit run app.py
 
 
-(Substitua app.py pelo nome do arquivo principal do seu código, se for diferente).
-
 O terminal exibirá um endereço local (geralmente http://localhost:8501) que você pode abrir no seu navegador para interagir com o dashboard.
+
+☁️ Deploy
+
+A aplicação está hospedada e em produção no Streamlit Community Cloud.
+
+🔗 Acesse o Dashboard Online Aqui: https://eda-industriadesemicondutores.streamlit.app/
+
+   
 
 
 <img width="1920" height="822" alt="Captura de Tela (258)" src="https://github.com/user-attachments/assets/f89c7dfa-a17d-4370-ba55-399b79f8c77c" />
