@@ -57,7 +57,8 @@ Siga os passos abaixo para rodar o projeto na sua máquina:
    streamlit run app.py
    O terminal exibirá um endereço local (geralmente http://localhost:8501) que você pode abrir no seu navegador para interagir com o dashboard.
 
-☁️ Deploy
+☁️ **Deploy**
+
    A aplicação está hospedada e em produção no Streamlit Community Cloud.
    🔗 https://eda-industriadesemicondutores.streamlit.app/
 
